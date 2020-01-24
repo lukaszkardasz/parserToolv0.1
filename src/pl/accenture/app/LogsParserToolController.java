@@ -20,13 +20,9 @@ public class LogsParserToolController {
     private void openFirstTypeLogFile() {
         System.out.println("Enter relative path to file: ");
         String pathFromUser = sc.nextLine();
+        ArrayList<String> originalLinesList = new ArrayList<>();                                                        //original lines list from file as Strings
 
-
-        ArrayList<String> originalLinesList = new ArrayList<>();        //original lines list from file as Strings
-
-
-
-        // READ FROM FILE SECTION
+                                                                                                                        // READ FROM FILE SECTION
         BufferedReader reader;
         try {
             reader = new BufferedReader(new FileReader(pathFromUser));
@@ -41,13 +37,14 @@ public class LogsParserToolController {
             System.out.println("Incorrect file path, try again!");
             return;
         }
-        //MARKET STRING INPUT SECTION
+
+                                                                                                                        //MARKET STRING INPUT SECTION
         System.out.println("Enter market to search as String [example: \"us\"]");
         String marketFromUser = sc.nextLine();
         String market = biuldSearchMarketString(marketFromUser);
 
-        //ADD LINES TO LIST SECTION
-        ArrayList<String> afterFilterLines = originalLinesList.stream()
+                                                                                                                        //FILTER ADD LINES TO LIST SECTION
+        ArrayList<String> afterFilterLinesList = originalLinesList.stream()
                 .filter(l -> l.contains(market))
                 .filter(l -> l.contains(MUST_CONTAIN_1))
                 .filter(l -> !l.contains(MUST_NOT_CONTAIN_1))
@@ -56,21 +53,21 @@ public class LogsParserToolController {
 
         System.out.println("-------------------------------------------------------------");
         int lineCounter = 0;
-        for (String line : afterFilterLines) {
+        for (String line : afterFilterLinesList) {
             System.out.println(line);
-            //operation on single element
+                                                                                                                        //operation on single element
             String[] splitedLine = line.split("|");
             LineToSplit line1 = new LineToSplit();
 
 
             lineCounter++;
         }
-        //PRINT INFO SECTION
+                                                                                                                        //PRINT INFO SECTION
         System.out.print("Original list of log elements count: ");
         System.out.println(originalLinesList.size() + " lines");
 
         System.out.print("Elements count after filter: ");
-        System.out.println(afterFilterLines.size());
+        System.out.println(afterFilterLinesList.size());
     }
 
     static private String biuldSearchMarketString(String marketFromUser) {
@@ -78,8 +75,6 @@ public class LogsParserToolController {
         market = "|" + marketFromUser + "|";
         return market;
     }
-
-
     private void openSecondTypeLogFile() {
         System.out.println("not implemented yet :P");
     }
