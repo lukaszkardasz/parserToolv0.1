@@ -4,10 +4,12 @@ import java.util.NoSuchElementException;
 
 public enum OPTIONS {
 
-    OPEN_FIRST_TYPE_LOG_FILE(0, "Open log file: proc-ciamtoomnidataload-api"),
-    OPEN_SECOND_TYPE_LOG_FILE(1, "Open log file: unknown-type"),
-    OPEN_THIRD_TYPE_LOG_FILE(2, "Open log file: unknown-type"),
-    EXIT (3, "Exit");
+    //menu order bellow
+    EXIT (0, "Exit"),
+    OPEN_FIRST_TYPE_LOG_FILE(1, "Open log file: proc-ciamtoomnidataload-api"),
+    OPEN_SECOND_TYPE_LOG_FILE(2, "Open log file: unknown-type"),
+    OPEN_THIRD_TYPE_LOG_FILE(3, "Open log file: unknown-type");
+
 
     private final int shortcut;
     private final String description;
