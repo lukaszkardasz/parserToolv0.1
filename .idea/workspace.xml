@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19f3b817-13dc-4676-a7be-0f91898d6263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pl/accenture/app/LogsParserToolApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/accenture/app/LogsParserToolController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/accenture/app/OPTIONS.java" afterDir="false" />
+    <list default="true" id="19f3b817-13dc-4676-a7be-0f91898d6263" name="Default Changelist" comment="added menu structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParserToolv0.1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParserToolv0.1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ParserToolv0.1/META-INF/ParserToolv0.1.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ParserToolv0.1/pl/accenture/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParserToolv0.1/pl/accenture/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/accenture/LineToSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/accenture/LineToSplit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/accenture/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/accenture/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/accenture/app/LogsParserToolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/accenture/app/LogsParserToolController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +38,21 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../privateProjects/PrivateProjects" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.LogsParserToolApp">
     <configuration name="GetAllLines" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.accenture.GetAllLines" />
+      <module name="ParserToolv0.1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogsParserToolApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.accenture.app.LogsParserToolApp" />
       <module name="ParserToolv0.1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LogsParserToolApp" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.GetAllLines" />
       </list>
@@ -75,12 +82,24 @@
       <updated>1579789231080</updated>
       <workItem from="1579789233792" duration="5265000" />
       <workItem from="1579794758269" duration="8400000" />
-      <workItem from="1579853261245" duration="4398000" />
+      <workItem from="1579853261245" duration="5736000" />
     </task>
+    <task id="LOCAL-00001" summary="added menu structure">
+      <created>1579857967026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579857967026</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added menu structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added menu structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="182" key="#Project_Structure" timestamp="1579789269749">
@@ -100,29 +119,33 @@
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
     <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579793728023" />
+    <state x="2505" y="118" key="CommitChangelistDialog2" timestamp="1579858907310">
+      <screen x="1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="2505" y="118" key="CommitChangelistDialog2/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579858907310" />
     <state x="2660" y="279" key="FileChooserDialogImpl" timestamp="1579855207225">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
     <state x="2660" y="279" key="FileChooserDialogImpl/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579855207225" />
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1579853161940">
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1579859133854">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579859133854" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579806630732" />
-    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1579853161940">
+    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1579859133854">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579859133854" />
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1579806630732" />
-    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1579853161940">
+    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1579859133854">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579859133854" />
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1579806630731" />
-    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1579853161940">
+    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1579859133854">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579859133854" />
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1579806630732" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579794503895">
       <screen x="1920" y="3" width="1920" height="1040" />
@@ -140,10 +163,10 @@
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579794503895" />
-    <state x="2360" y="98" key="SettingsEditor" timestamp="1579857785264">
+    <state x="2360" y="98" key="SettingsEditor" timestamp="1579859103461">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state x="2360" y="98" key="SettingsEditor/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579857785264" />
+    <state x="2360" y="98" key="SettingsEditor/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579859103461" />
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1579789236319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

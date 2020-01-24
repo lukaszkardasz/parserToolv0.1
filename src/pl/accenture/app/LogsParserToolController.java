@@ -1,5 +1,6 @@
 package pl.accenture.app;
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class LogsParserToolController {
@@ -9,23 +10,33 @@ public class LogsParserToolController {
     public void loop() {
         OPTIONS option = null;
         while (option != OPTIONS.EXIT){
-            showOptions();
-            OPTIONS chooseOption = chooseOption();
-            executeOption(chooseOption);
+            try {
+                showOptions();
+                OPTIONS chooseOption = chooseOption();
+                executeOption(chooseOption);
+            } catch (NoSuchElementException e) {
+                System.out.println("Illegal operation, try again!");
+            }
         }
     }
 
     private void executeOption(OPTIONS options) {
         switch(options){
-            case OPEN_FIRST_TYPE_LOG_FILE -> openFirstTypeLogFile();
-            case OPEN_SECOND_TYPE_LOG_FILE -> openSecondTypeLogFile();
-            case OPEN_THIRD_TYPE_LOG_FILE -> openThirdTypeLogFile();
-            case EXIT -> close();
+            case OPEN_FIRST_TYPE_LOG_FILE : openFirstTypeLogFile();
+            break;
+            case OPEN_SECOND_TYPE_LOG_FILE : openSecondTypeLogFile();
+            break;
+            case OPEN_THIRD_TYPE_LOG_FILE : openThirdTypeLogFile();
+            break;
+            case EXIT : close();
+            default : throw new NoSuchElementException();
         }
     }
 
     private void openFirstTypeLogFile() {
-        
+        System.out.println("Enter relative path to file: ");
+        String pathFromUser = sc.nextLine();
+        System.out.println(pathFromUser);
     }
 
     private void openSecondTypeLogFile() {
