@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19f3b817-13dc-4676-a7be-0f91898d6263" name="Default Changelist" comment="" />
+    <list default="true" id="19f3b817-13dc-4676-a7be-0f91898d6263" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pl/accenture/app/LogsParserToolApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/accenture/app/LogsParserToolController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pl/accenture/app/OPTIONS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ParserToolv0.1/pl/accenture/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ParserToolv0.1/pl/accenture/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/accenture/LineToSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/accenture/LineToSplit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/accenture/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/accenture/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +19,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WndKjIvFEJbxbfEfaClkEf7yMQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,9 +35,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../privateProjects/PrivateProjects" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -59,7 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579789231080</updated>
       <workItem from="1579789233792" duration="5265000" />
-      <workItem from="1579794758269" duration="511000" />
+      <workItem from="1579794758269" duration="8400000" />
+      <workItem from="1579853261245" duration="4398000" />
     </task>
     <servers />
   </component>
@@ -75,30 +91,39 @@
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
     <state x="2334" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579791066954" />
-    <state x="2685" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1579789509511">
+    <state x="2685" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1579856350689">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state x="2685" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579789509511" />
+    <state x="2685" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579856350689" />
+    <state x="510" y="51" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1579807697435" />
     <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579793728023">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
     <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579793728023" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1579794503894">
+    <state x="2660" y="279" key="FileChooserDialogImpl" timestamp="1579855207225">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579794503894" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1579794503894">
+    <state x="2660" y="279" key="FileChooserDialogImpl/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579855207225" />
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1579853161940">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579794503894" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1579794503894">
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579806630732" />
+    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1579853161940">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579794503894" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1579794503894">
+    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1579806630732" />
+    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1579853161940">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579794503894" />
+    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1579806630731" />
+    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1579853161940">
+      <screen x="1920" y="3" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579853161940" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1579806630732" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579794503895">
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
@@ -115,24 +140,18 @@
       <screen x="1920" y="3" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579794503895" />
+    <state x="2360" y="98" key="SettingsEditor" timestamp="1579857785264">
+      <screen x="1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="2360" y="98" key="SettingsEditor/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579857785264" />
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1579789236319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="341" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.3.1920.1040@0.0.1280.680" timestamp="1579789236319" />
-    <state x="3081" y="268" key="extract.method.dialog" timestamp="1579793718722">
-      <screen x="1920" y="3" width="1920" height="1040" />
+    <state x="742" y="173" key="extract.method.dialog" timestamp="1579804358112">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="3081" y="268" key="extract.method.dialog/0.0.1280.680/1920.3.1920.1040@1920.3.1920.1040" timestamp="1579793718722" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pl/accenture/Main.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="742" y="173" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1579804358112" />
   </component>
 </project>
