@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -20,7 +21,7 @@ public class LogsParserToolController {
     private void openFirstTypeLogFile() {
         System.out.println("Enter relative path to file: ");
         String pathFromUser = sc.nextLine();
-        ArrayList<String> originalLinesList = new ArrayList<>();                                                        //original lines list from file as Strings
+        ArrayList<String> originalLinesListBeforeFilter = new ArrayList<>();                                            //original lines list from file as Strings
 
                                                                                                                         // READ FROM FILE SECTION
         BufferedReader reader;
@@ -29,7 +30,7 @@ public class LogsParserToolController {
             String line = reader.readLine();
 
             while (line != null) {
-                originalLinesList.add(line);
+                originalLinesListBeforeFilter.add(line);
                 //read next line
                 line = reader.readLine();
             }
@@ -44,7 +45,8 @@ public class LogsParserToolController {
         String market = biuldSearchMarketString(marketFromUser);
 
                                                                                                                         //FILTER ADD LINES TO LIST SECTION
-        ArrayList<String> afterFilterLinesList = originalLinesList.stream()
+        ArrayList<String> afterFilterLinesList = originalLinesListBeforeFilter
+                .stream()
                 .filter(l -> l.contains(market))
                 .filter(l -> l.contains(MUST_CONTAIN_1))
                 .filter(l -> !l.contains(MUST_NOT_CONTAIN_1))
@@ -52,19 +54,25 @@ public class LogsParserToolController {
                 .collect(Collectors.toCollection(ArrayList::new));
 
         System.out.println("-------------------------------------------------------------");
-        int lineCounter = 0;
+
+        ArrayList<String[]> afterSplitLinesList = new ArrayList<>();                                                    // list of string tables after split
         for (String line : afterFilterLinesList) {
-            System.out.println(line);
-                                                                                                                        //operation on single element
+            //operation on single element
             String[] splitedLine = line.split("|");
-            LineToSplit line1 = new LineToSplit();
-
-
-            lineCounter++;
+            afterSplitLinesList.add(splitedLine);
         }
-                                                                                                                        //PRINT INFO SECTION
+        //-------------------------------------
+
+
+
+
+
+
+        //-------------------------------------
+
+        //PRINT INFO SECTION
         System.out.print("Original list of log elements count: ");
-        System.out.println(originalLinesList.size() + " lines");
+        System.out.println(originalLinesListBeforeFilter.size() + " lines");
 
         System.out.print("Elements count after filter: ");
         System.out.println(afterFilterLinesList.size());
