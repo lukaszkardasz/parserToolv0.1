@@ -1,4 +1,4 @@
-package pl.accenture.app;
+package pl.accenture;
 
 public class LogsParserToolApp {
     public static void main(String[] args) {

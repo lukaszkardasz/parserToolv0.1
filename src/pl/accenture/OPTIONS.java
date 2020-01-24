@@ -1,4 +1,4 @@
-package pl.accenture.app;
+package pl.accenture;
 
 import java.util.NoSuchElementException;
 
